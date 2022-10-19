@@ -1,0 +1,72 @@
+@font-face {
+    font-family: PTsans;
+    src: url(../fonts/PTSans-Regular.ttf);
+}
+
+ ::-webkit-scrollbar {
+    width: 15px;
+    background-color: var(--fourth-color);
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--third-color);
+}
+
+ :root {
+    font-size: 16px;
+    --first-color: #9eb6ff;
+    --second-color: #020066;
+    --third-color: #ffcc00;
+    --fourth-color: #fff4c7;
+    --fifth-color: #0139df;
+}
+
+.loader-div {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--first-color);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+}
+
+.factor {
+    color: transparent;
+    background-color: var(--first-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+*::selection {
+    background-color: var(--third-color);
+    color: var(--fifth-color);
+}
+
+table {
+    margin-top: 5%!important;
+    font-size: 0.875rem;
+    width: 90%!important;
+    margin: auto;
+    color: var(--second-color)!important;
+}
+
+table * {
+    border: 2px solid var(--third-color)!important;
+    text-align: left;
+    vertical-align: middle!important;
+}
+
+table img {
+    border: none!important;
+}
+
+.finish {
+    margin: 2rem auto;
+    background-color: var(--third-color);
+    color: var(--second-color);
+}
